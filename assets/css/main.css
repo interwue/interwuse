@@ -1838,6 +1838,28 @@ section,
   color: var(--accent-color);
 }
 
+.accordion {
+  max-width: 1120px; /* Set desired width */
+  margin: 0 auto; /* Center it */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Change accordion button background color when opened */
+.accordion-button:not(.collapsed) {
+  background-color: #ff4a17 !important; /* Change background to orange */
+  color: white !important; /* Change text color to white for better visibility */
+  border-radius: 10px;
+}
+
+/* Remove default blue outline when focused */
+.accordion-button:focus {
+  box-shadow: none !important;
+  border-color: #ff4a17 !important;
+  border-radius: 10px;
+}
+
+
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
